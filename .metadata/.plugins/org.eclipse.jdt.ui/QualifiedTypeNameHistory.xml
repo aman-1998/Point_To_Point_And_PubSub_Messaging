@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory"/>
+    <fullyQualifiedTypeName name="javax.jms.Destination"/>
+    <fullyQualifiedTypeName name="javax.jms.Topic"/>
+    <fullyQualifiedTypeName name="javax.jms.MessageProducer"/>
+    <fullyQualifiedTypeName name="javax.jms.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory"/>
+    <fullyQualifiedTypeName name="javax.jms.Connection"/>
+    <fullyQualifiedTypeName name="javax.jms.Session"/>
+    <fullyQualifiedTypeName name="javax.jms.Queue"/>
+    <fullyQualifiedTypeName name="javax.jms.Message"/>
+    <fullyQualifiedTypeName name="javax.jms.QueueBrowser"/>
+    <fullyQualifiedTypeName name="java.util.Enumeration"/>
+    <fullyQualifiedTypeName name="javax.jms.TextMessage"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="javax.jms.JMSException"/>
+    <fullyQualifiedTypeName name="javax.jms.MessageConsumer"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package personal.learning.activemq.jms;
+
+public class Consuming_Messages {
+	
+	public static void main(String[] args) {
+		
+	}
+}

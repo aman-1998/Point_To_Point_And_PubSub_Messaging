@@ -1,0 +1,48 @@
+package personal.learning.activemq.jms;
+
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.MessageConsumer;
+import javax.jms.MessageProducer;
+import javax.jms.Queue;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
+
+public class App 
+{
+    public static void main(String[] args)
+    {
+    	ConnectionFactory connectionFactoty = new ActiveMQConnectionFactory("tcp://localhost:61616");
+    	Connection connection = null;
+    	Session session = null;
+    	 try {
+    		 connection = connectionFactoty.createConnection();
+    		 
+    		 session = connection.createSession();
+    		 
+    		 Queue queue1 = session.createQueue("myQueue");
+    		 
+    		 MessageProducer producer = session.createProducer(queue1);
+    		 
+    		 String message = "Hello! how are you ?";
+    		 TextMessage textMessage = session.createTextMessage(message);
+    		 
+    		 producer.send(textMessage);
+    		 System.out.println("Message sent: " + message);
+    		 
+    		 //--------------------------------------------------------------
+    		 
+    		 MessageConsumer consumer = session.createConsumer(queue1);
+    		 connection.start();
+    		 TextMessage receivedMessage = (TextMessage) consumer.receive(); // Infinite wait
+    		 System.out.println();
+    		 
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
+    }
+}

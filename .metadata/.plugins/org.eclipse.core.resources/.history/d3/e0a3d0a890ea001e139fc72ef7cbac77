@@ -1,0 +1,13 @@
+package personal.learning.activemq.jms;
+
+import javax.jms.ConnectionFactory;
+
+import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
+
+public class Producing_And_Consuming_N1 {
+	public static void main(String[] args) {
+		
+		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+		
+	}
+}

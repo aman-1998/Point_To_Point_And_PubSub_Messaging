@@ -1,0 +1,8 @@
+package personal.learning.activemq.jms;
+
+public class Producing_Message_N1 {
+	
+	public static void main(String[] args) {
+		
+	}
+}
