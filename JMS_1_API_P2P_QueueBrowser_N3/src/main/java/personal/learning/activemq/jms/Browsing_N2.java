@@ -31,22 +31,24 @@ public class Browsing_N2 {
 			
 			QueueBrowser queueBrowser = session.createBrowser(queue);
 			
-			Enumeration<TextMessage> messagesEnum = queueBrowser.getEnumeration();
+			Enumeration<?> messagesEnum = queueBrowser.getEnumeration();
 			
-			// Using Enumeration
-			while(messagesEnum.hasMoreElements()) {
-				TextMessage msg = messagesEnum.nextElement();
-                System.out.println("Messages in queue: " + msg.getText());
-            }
-			
-			System.out.println("-------------");
 			// Using Iterator
-			Iterator<TextMessage> iterator = messagesEnum.asIterator();
+			Iterator<?> iterator = messagesEnum.asIterator();
 			
-			while(iterator.hasNext()) {
-				TextMessage msg = iterator.next();
-                System.out.println("Messages in queue: " + msg.getText());
-            }
+			if(!iterator.hasNext()) {
+				System.out.println("No messages are available in queue : " + queue.getQueueName());
+			} else {
+				while(iterator.hasNext()) {
+					Message message = (Message) iterator.next();
+					if(message instanceof TextMessage) {
+						TextMessage textMessage = (TextMessage) message;
+						System.out.println("Message in queue : " + textMessage.getText());
+					} else {
+						System.out.println("Non-text message : " + message);
+					}
+				}
+			}
 			
 			
 		} catch(JMSException e) {

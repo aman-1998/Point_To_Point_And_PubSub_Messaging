@@ -6,6 +6,7 @@ import java.util.Iterator;
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSException;
+import javax.jms.Message;
 import javax.jms.MessageProducer;
 import javax.jms.Queue;
 import javax.jms.QueueBrowser;
@@ -58,15 +59,29 @@ public class Producing_Message_And_Browsing_N1 {
 			
 			//--------------------------------------------------------------
 			
+			try {
+				Thread.sleep(8000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
 			System.out.println("-------------------------------------");
 			QueueBrowser queueBrowser = session.createBrowser(queue);
 			
-			Enumeration<TextMessage> messagesEnum = queueBrowser.getEnumeration();
-			Iterator<TextMessage> iterator = messagesEnum.asIterator();
+			Enumeration<?> messagesEnum = queueBrowser.getEnumeration();
 			
-			while(iterator.hasNext()) {
-				TextMessage txtMsg = iterator.next();
-				System.out.println("Messages in queue: " + txtMsg.getText());
+			if(!messagesEnum.hasMoreElements()) {
+				System.out.println("No messages are available in queue : " + queue.getQueueName());
+			} else {
+				while(messagesEnum.hasMoreElements()) {
+					Message message = (Message) messagesEnum.nextElement();
+					if(message instanceof TextMessage) {
+						TextMessage textMessage = (TextMessage) message;
+						System.out.println("Message in queue : " + textMessage.getText());
+					} else {
+						System.out.println("Non-text message : " + message);
+					}
+				}
 			}
 			
 		} catch(JMSException e) {

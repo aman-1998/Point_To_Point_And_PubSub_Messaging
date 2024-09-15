@@ -25,7 +25,6 @@ public class Producing_And_Consuming_N1 {
 			
 			Topic topic = session.createTopic("topic1");
 			
-			
 			MessageProducer producer = session.createProducer(topic);
 			
 			MessageConsumer consumer1 = session.createConsumer(topic); // Consumer1 subscribed to topic
@@ -43,7 +42,7 @@ public class Producing_And_Consuming_N1 {
 			//------------------------------------------------------------------------------------------
 			
 			try {
-				Thread.sleep(4000);
+				Thread.sleep(8000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -56,13 +55,13 @@ public class Producing_And_Consuming_N1 {
 			System.out.println("Message received by consumer1: " + message1.getBody(String.class));
 			
 			Message message2 = consumer2.receive();
-			System.out.println("Message received by consumer2: " + message2.getBody(String.class));
+			System.out.println("Message received by consumer2: " + ((TextMessage) message2).getText());
 			
 			Message message3 = consumer3.receive();
 			System.out.println("Message received by consumer3: " + message3.getBody(String.class));
 			
 			Message message4 = consumer4.receive();
-			System.out.println("Message received by consumer4: " + message4.getBody(String.class));
+			System.out.println("Message received by consumer4: " + ((TextMessage) message4).getText());
 			
 			
 		} catch(JMSException e) {
