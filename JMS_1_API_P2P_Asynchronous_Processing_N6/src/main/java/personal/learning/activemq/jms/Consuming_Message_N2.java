@@ -62,5 +62,4 @@ class MessageProcessor implements MessageListener {
 			e.printStackTrace();
 		}
 	}
-	
 }

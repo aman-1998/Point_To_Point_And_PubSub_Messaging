@@ -34,6 +34,15 @@ public class Producing_Message_N1 {
 			producer.send(textMessage);
 			System.out.println("Message sent: " + textMessage.getText());
 			
+			//---------------------------------------------------------------
+			
+			String msg2 = "How are you Sweta ?";
+			TextMessage textMessage1 = session.createTextMessage(msg2);
+			producer.send(textMessage1);
+			System.out.println("Message sent: " + textMessage1.getText());
+			
+			
+			
 		} catch(JMSException e) {
 			e.printStackTrace();
 		} finally {

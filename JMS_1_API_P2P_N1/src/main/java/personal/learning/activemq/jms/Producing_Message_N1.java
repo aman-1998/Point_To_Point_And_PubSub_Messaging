@@ -25,7 +25,7 @@ public class Producing_Message_N1 {
 
 			MessageProducer producer = session.createProducer(queue);
 
-			String message = "Hello! My name is Aman";
+			String message = "Hello! My name is Sumit";
 			TextMessage textMessage = session.createTextMessage(message);
 
 			producer.send(textMessage);
