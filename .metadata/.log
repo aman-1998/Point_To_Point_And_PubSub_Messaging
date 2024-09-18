@@ -8354,3 +8354,33 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:02.730
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:02.759
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:02.760
+!MESSAGE buffering callback sts4.classpath.saoHsEPs JMS_1_API_P2P_Temporary_Queue_ReplyTo_N10 false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:02.762
+!MESSAGE executing callback sts4.classpath.saoHsEPs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:03.781
+!MESSAGE executing callback sts4.classpath.saoHsEPs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:11.801
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:11.804
+!MESSAGE classpath=9 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:11.805
+!MESSAGE buffering callback sts4.classpath.saoHsEPs JMS_1_API_P2P_Temporary_Queue_ReplyTo_N10 false 9
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:11.805
+!MESSAGE executing callback sts4.classpath.saoHsEPs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-18 23:33:11.867
+!MESSAGE executing callback sts4.classpath.saoHsEPs SUCCESS [done]
