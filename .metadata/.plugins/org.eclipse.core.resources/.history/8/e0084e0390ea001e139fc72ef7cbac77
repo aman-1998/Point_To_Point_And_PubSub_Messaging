@@ -1,9 +1,0 @@
-package personal.learning.activemq.jms;
-
-public class Producing_And_Consuming_N1 {
-	public static void main(String[] args) {
-		
-		
-		
-	}
-}

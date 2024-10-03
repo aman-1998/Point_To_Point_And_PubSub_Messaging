@@ -1,5 +1,0 @@
-package personal.learning.activemq.jms;
-
-public class Consuming_Messages {
-
-}
