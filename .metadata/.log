@@ -242,3 +242,125 @@ org.eclipse.core.runtime.CoreException: Launch configuration OrderHistReqConsume
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-15 22:07:43.351
 !MESSAGE executing callback sts4.classpath.LmqqweVG SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-10-19 21:26:58.618
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.363
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.367
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.368
+!MESSAGE buffering callback sts4.classpath.LmqqweVG JMS_1_PubSub_Non_Durable_Consumers_N24 false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.370
+!MESSAGE executing callback sts4.classpath.LmqqweVG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.417
+!MESSAGE executing callback sts4.classpath.LmqqweVG SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.555
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.558
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.559
+!MESSAGE buffering callback sts4.classpath.LmqqweVG JMS_1_PubSub_Non_Durable_Consumers_N24 false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.560
+!MESSAGE executing callback sts4.classpath.LmqqweVG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:03:43.573
+!MESSAGE executing callback sts4.classpath.LmqqweVG SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:20:03.843
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:20:03.845
+!MESSAGE classpath=9 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:20:03.846
+!MESSAGE buffering callback sts4.classpath.LmqqweVG JMS_1_PubSub_Non_Durable_Consumers_N24 false 9
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:20:03.846
+!MESSAGE executing callback sts4.classpath.LmqqweVG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-19 22:20:03.877
+!MESSAGE executing callback sts4.classpath.LmqqweVG SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-10-20 12:56:17.720
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-10-20 14:20:33.663
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:19.042
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:19.075
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:19.077
+!MESSAGE buffering callback sts4.classpath.LmqqweVG JMS_1_PubSub_Durable_Consumers_N25 false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:19.078
+!MESSAGE executing callback sts4.classpath.LmqqweVG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:21.080
+!MESSAGE executing callback sts4.classpath.LmqqweVG FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-21 00:31:21.081
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:29.385
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:29.387
+!MESSAGE classpath=9 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:29.388
+!MESSAGE buffering callback sts4.classpath.LmqqweVG JMS_1_PubSub_Durable_Consumers_N25 false 9
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:29.389
+!MESSAGE executing callback sts4.classpath.LmqqweVG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-21 00:31:29.493
+!MESSAGE executing callback sts4.classpath.LmqqweVG SUCCESS [done]
