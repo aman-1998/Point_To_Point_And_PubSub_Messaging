@@ -20,6 +20,7 @@ public class PayrollAppConsumer1 {
 		
 		String brokerUrl = "tcp://localhost:61616";
 		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
+		
 		Connection connection = null;
 		Session session = null;
 		
