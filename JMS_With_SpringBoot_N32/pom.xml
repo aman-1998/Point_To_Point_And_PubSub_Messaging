@@ -10,7 +10,7 @@
 	<groupId>personal.learning.jms</groupId>
 	<artifactId>JMS_With_SpringBoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>JMS_With_SpringBoot</name>
+	<name>JMS_With_SpringBoot_N32</name>
 	<description>Spring With JMS</description>
 	
 	<properties>
