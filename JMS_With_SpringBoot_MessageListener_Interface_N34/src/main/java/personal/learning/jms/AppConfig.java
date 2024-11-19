@@ -5,8 +5,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import personal.learning.jms.receiver.DemoMessageReceiver;
+import personal.learning.jms.receiver.DummyMessageReceiver;
 import personal.learning.jms.receiver.TestMessageReceiver;
 import personal.learning.jms.sender.DemoMessageSender;
+import personal.learning.jms.sender.DummyMessageSender;
 import personal.learning.jms.sender.TestMessageSender;
 
 @Configuration
@@ -31,6 +33,16 @@ public class AppConfig {
 	@Bean
 	public DemoMessageSender demoMessageSender() {
 		return new DemoMessageSender();
+	}
+	
+	@Bean
+	public DummyMessageSender dummyMessageSender() {
+		return new DummyMessageSender();
+	}
+	
+	@Bean
+	public DummyMessageReceiver dummyMessageReceiver() {
+		return new DummyMessageReceiver();
 	}
 
 }

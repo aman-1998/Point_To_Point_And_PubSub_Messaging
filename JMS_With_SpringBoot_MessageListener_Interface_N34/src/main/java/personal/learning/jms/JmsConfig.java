@@ -8,6 +8,7 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
 
 import personal.learning.jms.receiver.DemoMessageReceiver;
+import personal.learning.jms.receiver.DummyMessageReceiver;
 
 @Configuration
 public class JmsConfig {
@@ -17,6 +18,12 @@ public class JmsConfig {
 	
 	@Value("${springjms.myQueue.test1}")
 	private String demoQueue;
+	
+	@Value("${springjms.myQueue.test2}")
+	private String dummyQueue;
+	
+	@Value("${springjms.myQueue.test2.default}")
+	private String defaultDummyQueue;
 
 	@Bean
 	public ActiveMQConnectionFactory connectionFactory() {
@@ -37,12 +44,29 @@ public class JmsConfig {
 		return jmsTemplate;
 	}
 	
+	@Bean("jmsDefaultDummyDestination")
+	public JmsTemplate jmsTemplate3(ActiveMQConnectionFactory connectionFactory) {
+		JmsTemplate jmsTemplate = new JmsTemplate(connectionFactory);
+		jmsTemplate.setDefaultDestinationName(defaultDummyQueue);
+		return jmsTemplate;
+	}
+	
 	@Bean
-	public DefaultMessageListenerContainer messageListenerContainer(ActiveMQConnectionFactory connectionFactory, DemoMessageReceiver demoMessageReceiver) {
+	public DefaultMessageListenerContainer messageListenerContainer1(ActiveMQConnectionFactory connectionFactory, DemoMessageReceiver demoMessageReceiver) {
 		DefaultMessageListenerContainer container = new DefaultMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
         container.setDestinationName(demoQueue);
         container.setMessageListener(demoMessageReceiver);
+        container.setConcurrency("1-5"); // Optional: Set concurrency for processing
+        return container;
+	}
+	
+	@Bean
+	public DefaultMessageListenerContainer messageListenerContainer2(ActiveMQConnectionFactory connectionFactory, DummyMessageReceiver dummyMessageReceiver) {
+		DefaultMessageListenerContainer container = new DefaultMessageListenerContainer();
+        container.setConnectionFactory(connectionFactory);
+        container.setDestinationName(dummyQueue);
+        container.setMessageListener(dummyMessageReceiver);
         container.setConcurrency("1-5"); // Optional: Set concurrency for processing
         return container;
 	}

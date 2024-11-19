@@ -43,4 +43,17 @@ public class TestController {
 		
 		return ResponseEntity.ok("Message sent successfully!!");
 	}
+	
+	@GetMapping("/send3")
+	public ResponseEntity<Object> sendMessage3() {
+		
+		try {
+			System.out.println("Sending message...");
+			demoMessageSender.send("Dummy message!!");
+		} catch(JmsException ex) {
+			return ResponseEntity.internalServerError().build();
+		}
+		
+		return ResponseEntity.ok("Message sent successfully!!");
+	}
 }
