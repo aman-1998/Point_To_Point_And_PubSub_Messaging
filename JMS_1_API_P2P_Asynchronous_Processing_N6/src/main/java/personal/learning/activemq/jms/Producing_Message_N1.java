@@ -32,6 +32,11 @@ public class Producing_Message_N1 {
 			String message = "{ \"id\": " + id + ", \"name\": \"" + name + "\", \"school\": \"" + school + "\" }";
 			TextMessage textMessage = session.createTextMessage(message);
 			
+			/*
+			 * _AMQ_SCHED_DELIVERY is used for initial message delivery delay eg. 10s
+			 */
+			textMessage.setLongProperty("_AMQ_SCHED_DELIVERY", System.currentTimeMillis() + 10000);
+			
 			producer.send(textMessage);
 			System.out.println("Message sent: " + textMessage.getText());
 			
