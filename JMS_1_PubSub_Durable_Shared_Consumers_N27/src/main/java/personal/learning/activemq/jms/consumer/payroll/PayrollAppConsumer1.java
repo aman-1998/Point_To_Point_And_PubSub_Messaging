@@ -3,16 +3,13 @@ package personal.learning.activemq.jms.consumer.payroll;
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSException;
-import javax.jms.Message;
 import javax.jms.MessageConsumer;
-import javax.jms.MessageListener;
 import javax.jms.Session;
 import javax.jms.Topic;
 
 import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
 
 import personal.learning.activemq.jms.listener.PayrollAppListener;
-import personal.learning.activemq.jms.model.Employee;
 
 public class PayrollAppConsumer1 {
 	
@@ -52,11 +49,11 @@ public class PayrollAppConsumer1 {
 			ex.printStackTrace();
 			
 			try {
-				if(session == null) {
+				if(session != null) {
 					session.close();
 				}
 				
-				if(connection == null) {
+				if(connection != null) {
 					connection.close();
 				}
 			} catch(JMSException e) {
