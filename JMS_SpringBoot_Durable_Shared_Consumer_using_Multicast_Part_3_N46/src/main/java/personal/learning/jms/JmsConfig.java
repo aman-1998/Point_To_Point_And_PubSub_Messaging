@@ -20,7 +20,7 @@ public class JmsConfig {
 	public JmsTemplate jmsTemplate(ActiveMQConnectionFactory connectionFactory) {
 		JmsTemplate jmsTemplate = new JmsTemplate(connectionFactory);
 		jmsTemplate.setSessionTransacted(true);
-		jmsTemplate.setPubSubDomain(true);
+		jmsTemplate.setPubSubDomain(true); // mandatory
 		return jmsTemplate;
 	}
 	
