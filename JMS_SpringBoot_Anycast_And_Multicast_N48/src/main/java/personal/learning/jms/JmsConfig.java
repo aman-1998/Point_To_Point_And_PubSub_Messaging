@@ -24,6 +24,8 @@ public class JmsConfig {
 		return jmsTemplate;
 	}
 	/*
+	 * Youtube video: https://www.youtube.com/watch?v=VNbcksMm1Ow&list=PLaEq4mgXRLX9LIRY6pwwDhleVnqEjs3YK&index=1
+	 * 
 	 * In ActiveMQ Artemis, the default behavior for anycast routing is to deliver messages to queues 
 	 * bound to an address in a round-robin manner. However, you can change this behavior by configuring 
 	 * the routing type and queue settings. Here's how you can modify the routing behavior:

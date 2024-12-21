@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration xmlns="urn:activemq"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd">
+
+    <core xmlns="urn:activemq:core">
+        <!-- Unique name for Broker1 -->
+        <name>Broker1</name>
+
+        <!-- Persistence Configuration -->
+        <persistence-enabled>true</persistence-enabled>
+        <journal-type>NIO</journal-type>
+        <journal-directory>data/journal</journal-directory>
+        <bindings-directory>data/bindings</bindings-directory>
+        <paging-directory>data/paging</paging-directory>
+        <large-messages-directory>data/large-messages</large-messages-directory>
+
+        <journal-datasync>true</journal-datasync>
+        <journal-min-files>2</journal-min-files>
+        <journal-pool-files>10</journal-pool-files>
+        <journal-device-block-size>4096</journal-device-block-size>
+        <journal-file-size>10M</journal-file-size>
+        <journal-buffer-timeout>24184000</journal-buffer-timeout>
+        <journal-max-io>1</journal-max-io>
+
+        <!-- Cluster Credentials -->
+        <cluster-user>admin</cluster-user>
+        <cluster-password>admin</cluster-password>
+
+        <!-- Connectors Definition -->
+        <connectors>
+            <!-- Connector for Broker1 -->
+            <connector name="broker1-connector">tcp://localhost:61616</connector>
+            <!-- Connector for Broker2 -->
+            <connector name="broker2-connector">tcp://localhost:61617</connector>
+        </connectors>
+
+        <!-- Cluster Connections Configuration -->
+        <cluster-connections>
+            <cluster-connection name="my-cluster">
+                <!-- Reference to Broker1's connector -->
+                <connector-ref>broker1-connector</connector-ref>
+                
+                <!-- Load Balancing Policy -->
+                <message-load-balancing>ON_DEMAND</message-load-balancing>
+				<!-- <message-load-balancing>STRICT</message-load-balancing> -->
+				<!-- <message-load-balancing>OFF</message-load-balancing> -->
+                <max-hops>1</max-hops>
+                
+                <!-- Static Connectors to other brokers -->
+                <static-connectors>
+                    <connector-ref>broker2-connector</connector-ref>
+                </static-connectors>
+            </cluster-connection>
+        </cluster-connections>
+
+        <!-- Acceptors Definition -->
+        <acceptors>
+            <acceptor name="artemis">tcp://0.0.0.0:61616</acceptor>
+            <acceptor name="amqp">tcp://0.0.0.0:5672?protocols=AMQP;useEpoll=true</acceptor>
+            <acceptor name="stomp">tcp://0.0.0.0:61613?protocols=STOMP;useEpoll=true</acceptor>
+            <acceptor name="hornetq">tcp://0.0.0.0:5445?protocols=HORNETQ,STOMP;useEpoll=true</acceptor>
+            <acceptor name="mqtt">tcp://0.0.0.0:1883?protocols=MQTT;useEpoll=true</acceptor>
+        </acceptors>
+
+        <!-- Security Settings -->
+        <security-settings>
+            <security-setting match="#">
+                <permission type="createNonDurableQueue" roles="amq"/>
+                <permission type="deleteNonDurableQueue" roles="amq"/>
+                <permission type="createDurableQueue" roles="amq"/>
+                <permission type="deleteDurableQueue" roles="amq"/>
+                <permission type="createAddress" roles="amq"/>
+                <permission type="deleteAddress" roles="amq"/>
+                <permission type="consume" roles="amq"/>
+                <permission type="browse" roles="amq"/>
+                <permission type="send" roles="amq"/>
+                <permission type="manage" roles="amq"/>
+            </security-setting>
+        </security-settings>
+
+        <!-- Addresses Configuration -->
+        <addresses>
+            <address name="DLQ">
+                <anycast>
+                    <queue name="DLQ"/>
+                </anycast>
+            </address>
+            <address name="ExpiryQueue">
+                <anycast>
+                    <queue name="ExpiryQueue"/>
+                </anycast>
+            </address>
+            <address name="exampleQueue">
+                <anycast>
+                    <queue name="exampleQueue"/>
+                </anycast>
+            </address>
+        </addresses>
+    </core>
+</configuration>
