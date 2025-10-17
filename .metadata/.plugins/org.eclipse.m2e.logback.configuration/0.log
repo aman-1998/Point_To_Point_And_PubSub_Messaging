@@ -15569,3 +15569,55 @@ org.eclipse.core.runtime.CoreException: Launch configuration WellnessAppConsumer
 2025-01-10 19:23:03,091 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2025-01-10 19:23:03,092 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2025-01-10 19:23:03,092 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_SpringBoot_Clustering_Zookeeper_Based_Config_N50\src\test\resources
+2025-01-10 22:27:09,436 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.1+12
+2025-01-10 22:27:09,866 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-01-10 22:27:10,620 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@513f43a1{/help,null,AVAILABLE}
+2025-01-10 22:27:10,962 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2880f83b{HTTP/1.1, (http/1.1)}{127.0.0.1:64832}
+2025-01-10 22:27:11,014 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@20d37974{STARTING}[10.0.6,sto=0] @176187420ms
+2025-01-12 01:03:50,686 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@20d37974{STOPPING}[10.0.6,sto=0]
+2025-01-12 01:03:50,986 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2880f83b{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-01-12 01:03:51,456 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@513f43a1{/help,null,STOPPED}
+2025-06-22 21:52:48,958 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-06-22 23:11:31,739 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.1+12
+2025-06-22 23:11:31,776 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-06-22 23:11:31,823 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@17a0af02{/help,null,AVAILABLE}
+2025-06-22 23:11:31,860 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@507f147a{HTTP/1.1, (http/1.1)}{127.0.0.1:56677}
+2025-06-22 23:11:31,864 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@5b7e98d5{STARTING}[10.0.6,sto=0] @4801259ms
+2025-06-23 01:11:14,450 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:11:14,452 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:11:14,461 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-06-23 01:11:14,594 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-06-23 01:11:14,599 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:11:14,599 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:11:14,600 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_With_SpringBoot_Acknowledgement_Type_N35\src\test\resources
+2025-06-23 01:17:20,038 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:17:20,039 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:17:20,045 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-06-23 01:17:20,056 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-06-23 01:17:20,063 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:17:20,064 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:17:20,064 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_With_SpringBoot_Acknowledgement_Type_N35\src\test\resources
+2025-06-23 01:18:00,345 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:00,345 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:00,348 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-06-23 01:18:00,357 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-06-23 01:18:00,361 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:00,362 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:00,362 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_With_SpringBoot_Acknowledgement_Type_N35\src\test\resources
+2025-06-23 01:18:05,538 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:05,538 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:05,540 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-06-23 01:18:05,640 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-06-23 01:18:05,647 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:05,648 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:05,648 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_With_SpringBoot_Acknowledgement_Type_N35\src\test\resources
+2025-06-23 01:18:13,776 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:13,777 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:13,779 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2025-06-23 01:18:13,786 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-06-23 01:18:13,790 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-06-23 01:18:13,790 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2025-06-23 01:18:13,791 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\DELL\Desktop\P2P_And_PubSub_Messaging\JMS_With_SpringBoot_Acknowledgement_Type_N35\src\test\resources
+2025-06-27 14:11:09,450 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@5b7e98d5{STOPPING}[10.0.6,sto=0]
+2025-06-27 14:11:09,721 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@507f147a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-06-27 14:11:10,764 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@17a0af02{/help,null,STOPPED}
